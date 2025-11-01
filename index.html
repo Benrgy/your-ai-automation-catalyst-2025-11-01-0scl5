@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your AI Automation Catalyst - Transform your processes with bespoke AI solutions from our AI Automation Bureau">
+    <meta name="keywords" content="AI automation, process optimization, business intelligence, AI solutions">
+    <meta name="author" content="AI Automation Bureau">
+    <title>Your AI Automation Catalyst | AI Automation Bureau</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-accent {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .gradient-light {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .smooth-transition {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .card-hover {
+            @apply transform transition-all duration-300 hover:scale-105 hover:shadow-xl;
+        }
+
+        .button-primary {
+            @apply px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95;
+        }
+
+        .button-secondary {
+            @apply px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg border-2 border-blue-600 transform transition-all duration-300 hover:bg-blue-50 hover:scale-105 hover:shadow-lg active:scale-95;
+        }
+
+        .faq-answer {
+            max-height: 500px;
+            overflow: hidden;
+        }
+
+        .faq-answer.hidden {
+            max-height: 0;
+            display: none;
+        }
+
+        .faq-icon {
+            @apply transform transition-transform duration-300;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between max-w-7xl">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 gradient-accent rounded-lg flex items-center justify-center">
+                    <i class="fas fa-brain text-white text-lg"></i>
+                </div>
+                <span class="text-2xl font-bold text-gray-900">AIAutomation</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-700 font-medium hover:text-blue-600 smooth-transition">Features</a>
+                <a href="#benefits" class="text-gray-700 font-medium hover:text-blue-600 smooth-transition">Benefits</a>
+                <a href="#testimonials" class="text-gray-700 font-medium hover:text-blue-600 smooth-transition">Testimonials</a>
+                <a href="#about" class="text-gray-700 font-medium hover:text-blue-600 smooth-transition">About</a>
+                <a href="mailto:bengrauwde@hotmail.com" class="button-primary">Get Started</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden mobile-menu-button p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300" aria-label="Toggle menu">
+                <i class="fas fa-bars text-2xl text-gray-900"></i>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden absolute top-full left-0 right-0 bg-white shadow-lg md:hidden">
+                <div class="px-4 py-4 space-y-4">
+                    <a href="#features" class="block text-gray-700 font-medium hover:text-blue-600 smooth-transition py-2">Features</a>
+                    <a href="#benefits" class="block text-gray-700 font-medium hover:text-blue-600 smooth-transition py-2">Benefits</a>
+                    <a href="#testimonials" class="block text-gray-700 font-medium hover:text-blue-600 smooth-transition py-2">Testimonials</a>
+                    <a href="#about" class="block text-gray-700 font-medium hover:text-blue-600 smooth-transition py-2">About</a>
+                    <a href="mailto:bengrauwde@hotmail.com" class="button-primary block text-center">Get Started</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-24 bg-gradient-to-br from-gray-50 via-white to-gray-50 overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl"></div>
+        </div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div>
+                        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight tracking-tight">
+                            Your AI Automation <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Catalyst</span>
+                        </h1>
+                        <p class="mt-6 text-xl md:text-2xl text-gray-600 leading-relaxed">
+                            Unlock unprecedented efficiency and innovation. Our AI Automation Bureau transforms your processes, driving smarter business outcomes with cutting-edge technology and expert guidance.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://example.com" class="button-primary text-center">
+                            Start Your Transformation
+                        </a>
+                        <a href="mailto:bengrauwde@hotmail.com" class="button-secondary text-center">
+                            Schedule Consultation
+                        </a>
+                    </div>
+
+                    <div class="flex items-center space-x-8 pt-4">
+                        <div>
+                            <p class="text-3xl font-bold text-gray-900">500+</p>
+                            <p class="text-gray-600">Processes Optimized</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-gray-900">92%</p>
+                            <p class="text-gray-600">Efficiency Increase</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-gray-900">150+</p>
+                            <p class="text-gray-600">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden lg:block relative">
+                    <div class="relative w-full h-96 gradient-accent rounded-2xl shadow-2xl overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-magic text-white text-8xl opacity-20 mb-4"></i>
+                                <p class="text-white text-xl font-semibold">AI-Powered Automation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Powerful Features</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Comprehensive AI solutions designed to revolutionize your business operations and drive measurable results</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1: Bespoke AI Solutions -->
+                <div class="card-hover p-8 bg-white rounded-xl border border-gray-200 hover:border-blue-400">
+                    <div class="w-14 h-14 gradient-accent rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-cogs text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Bespoke AI Solutions</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Customized artificial intelligence implementations tailored to your specific business needs. Our expert team designs and deploys AI systems that integrate seamlessly with your existing infrastructure, ensuring maximum compatibility and minimal disruption to your operations.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-blue-600"></i>
+                            <span>Custom model development</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-blue-600"></i>
+                            <span>Enterprise integration</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-blue-600"></i>
+                            <span>Scalable architecture</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Process Discovery -->
+                <div class="card-hover p-8 bg-white rounded-xl border border-gray-200 hover:border-blue-400">
+                    <div class="w-14 h-14 gradient-accent rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-search text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Process Discovery</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Advanced analysis and identification of automation opportunities within your organization. We conduct comprehensive audits of your current workflows, identifying bottlenecks, inefficiencies, and areas where AI can deliver the greatest impact and ROI.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-blue-600"></i>
+                            <span>Workflow analysis</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-blue-600"></i>
+                            <span>Opportunity mapping</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-blue-600"></i>
+                            <span>ROI forecasting</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: Performance Monitoring -->
+                <div class="card-hover p-8 bg-white rounded-xl border border-gray-200 hover:border-blue-400">
+                    <div class="w-14 h-14 gradient-accent rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Performance Monitoring</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Real-time tracking and analytics for all your AI systems. Our comprehensive monitoring dashboards provide continuous insights into system performance, efficiency metrics, and business impact, enabling data-driven decision-making and continuous optimization.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-blue-600"></i>
+                            <span>Real-time dashboards</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-blue-600"></i>
+                            <span>Performance metrics</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-blue-600"></i>
+                            <span>Predictive alerts</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Transform Your Business</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Discover the tangible benefits of AI automation and how it drives real business value</p>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Benefit 1 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="w-full h-64 md:h-80 bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl flex items-center justify-center shadow-lg">
+                            <i class="fas fa-bolt text-6xl text-blue-600 opacity-30"></i>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4">Accelerated Efficiency</h3>
+                        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                            Experience dramatic improvements in operational efficiency. Our AI solutions automate repetitive tasks, eliminate manual errors, and streamline complex workflows. Organizations typically see 60-80% reduction in processing time and 40-50% cost savings within the first year of implementation.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-700">Reduce manual processing time by up to 75%</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-700">Minimize human error and improve accuracy</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-700">Enable 24/7 continuous operations</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="order-1">
+                        <div class="w-full h-64 md:h-80 bg-gradient-to-br from-green-100 to-emerald-100 rounded-xl flex items-center justify-center shadow-lg">
+                            <i class="fas fa-chart-pie text-6xl text-green-600 opacity-30"></i>
+                        </div>
+                    </div>
+                    <div class="order-2">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4">Enhanced Decision Making</h3>
+                        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                            Leverage advanced analytics and predictive intelligence to make smarter business decisions. Our AI systems analyze vast amounts of data in real-time, uncovering insights and patterns that would be impossible to detect manually, enabling proactive strategy and competitive advantage.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-green-600 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-700">Data-driven insights and predictive analytics</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-green-600 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-700">Identify market trends and opportunities</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-green-600 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-700">Risk mitigation and compliance automation</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="w-full h-64 md:h-80 bg-gradient-to-br from-purple-100 to-pink-100 rounded-xl flex items-center justify-center shadow-lg">
+                            <i class="fas fa-rocket text-6xl text-purple-600 opacity-30"></i>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4">Scalable Growth</h3>
+                        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                            Scale your operations without proportional increases in headcount or infrastructure costs. AI automation enables your business to handle increased volume, complexity, and customer demands while maintaining or reducing operational expenses, creating a path to exponential growth.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-purple-600 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-700">Handle 10x more transactions with same team</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-purple-600 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-700">Reduce per-unit processing costs</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-purple-600 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-700">Future-proof your infrastructure</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Client Success Stories</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Hear from organizations that have transformed their operations with our AI automation solutions</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="card-hover p-8 bg-gray-50 rounded-xl border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                        "The AI Automation Bureau completely transformed how we handle customer onboarding. What used to take our team 3 days now takes just 2 hours. The ROI was evident within the first month, and our customer satisfaction scores have increased by 35%. Absolutely game-changing."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">JM</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">Jennifer Martinez</p>
+                            <p class="text-gray-600">VP Operations, FinTech Solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="card-hover p-8 bg-gray-50 rounded-xl border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                        "We were skeptical about AI automation at first, but the team's expertise and approach made the transition seamless. Our data processing pipeline now runs autonomously, our error rates dropped from 8% to 0.2%, and our analysts can focus on strategic work instead of data entry. Highly recommend."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">DK</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">David Kim</p>
+                            <p class="text-gray-600">Director of Analytics, DataCorp Inc</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="card-hover p-8 bg-gray-50 rounded-xl border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                        "Outstanding service from start to finish. The team conducted a thorough process discovery that identified opportunities we never knew existed. Implementation was smooth, and we've already recovered our investment 3x over. Their ongoing support and optimization recommendations are invaluable."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">SL</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">Sarah Liu</p>
+                            <p class="text-gray-600">CEO, Supply Chain Logistics</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="card-hover p-8 bg-gray-50 rounded-xl border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                        "Partnering with the AI Automation Bureau was one of the best decisions we made this year. They didn't just implement tools; they fundamentally changed how we approach efficiency. Our operational costs decreased by 45%, and our team now focuses on innovation rather than routine tasks. Exceptional expertise."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">MP</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">Michael Patterson</p>
+                            <p class="text-gray-600">Chief Operating Officer, Manufacturing Co</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="w-full h-96 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl shadow-xl overflow-hidden flex items-center justify-center">
+                        <i class="fas fa-people-arrows text-white text-8xl opacity-20"></i>
+                    </div>
+                </div>
+
+                <div class="order-1 lg:order-2">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-8">About Our Bureau</h2>
+                    
+                    <div class="space-y-6">
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Founded in 2018 by a team of AI researchers and enterprise automation experts, the AI Automation Bureau emerged from a simple mission: to democratize access to enterprise-grade AI solutions. We recognized that most organizations lacked the in-house expertise and resources to implement AI effectively, so we built a team dedicated to bridging that gap. Over the past six years, we've grown from a boutique consulting firm to a full-service AI automation powerhouse, serving enterprises across finance, healthcare, manufacturing, and logistics sectors. Our founding team's combined 80+ years of experience in AI, machine learning, and business process optimization forms the backbone of our approach.
+                        </p>
+                        
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Our core mission is to empower organizations to achieve digital transformation through intelligent automation. We believe that AI should be accessible, practical, and focused on delivering measurable business value. We're committed to ethical AI practices, transparent partnerships, and long-term client success. Our values—innovation, integrity, impact, and inclusivity—guide every project and interaction. We don't just implement technology; we partner with our clients to fundamentally transform how they operate, compete, and grow. Every member of our team is dedicated to ensuring that your AI journey is smooth, successful, and transformative.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-6 mt-10 pt-10 border-t border-gray-200">
+                        <div class="text-center">
+                            <p class="text-3xl font-bold text-blue-600">500+</p>
+                            <p class="text-gray-600 mt-2">Projects Completed</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-3xl font-bold text-blue-600">150+</p>
+                            <p class="text-gray-600 mt-2">Enterprise Clients</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-3xl font-bold text-blue-600">$2B+</p>
+                            <p class="text-gray-600 mt-2">Value Generated</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-24 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=400&fit=crop" alt="Technology background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+        </div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+            <div class="text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Transform Your Business?</h2>
+                <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+                    Join hundreds of organizations that have already unlocked the power of AI automation. Let's discuss how we can help you achieve your business goals.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://example.com" class="px-8 py-4 bg-white text-blue-600 font-bold rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 text-center">
+                        Start Your Journey Today
+                    </a>
+                    <a href="mailto:bengrauwde@hotmail.com" class="px-8 py-4 bg-blue-600 text-white font-bold rounded-lg border-2 border-white transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 text-center">
+                        Contact Our Team
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 gradient-accent rounded-lg flex items-center justify-center">
+                            <i class="fas fa-brain text-white text-sm"></i>
+                        </div>
+                        <span class="text-xl font-bold text-white">AIAutomation</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Transforming businesses through intelligent automation and AI-powered solutions.
+                    </p>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white smooth-transition">Bespoke AI Solutions</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white smooth-transition">Process Discovery</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white smooth-transition">Performance Monitoring</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white smooth-transition">Consulting</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white smooth-transition">About Us</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white smooth-transition">Success Stories</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white smooth-transition">Blog</a></li>
+                        <li><a href="mailto:bengrauwde@hotmail.com" class="text-gray-400 hover:text-white smooth-transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white smooth-transition">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white smooth-transition">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white smooth-transition">Cookie Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white smooth-transition">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                        &copy; 2025 AI Automation Bureau. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white smooth-transition" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white smooth-transition" aria-label="Twitter">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white smooth-transition" aria-label="Facebook">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white smooth-transition" aria-label="GitHub">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
